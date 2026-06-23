@@ -15,7 +15,7 @@ export default function RootLayout({
           {/* <Header /> */}
           {/* GLOBAL CART DRAWER (always available) */}
           {children}
-          {<CartDrawer/>}
+          {/* {<CartDrawer/>} */}
           <footer>Footer</footer>
         </CartProvider>
       </body>
