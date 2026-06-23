@@ -3,7 +3,6 @@
 import { memo, useCallback, useMemo, useState } from "react";
 
 const Child = memo(({ onIncrement }: { onIncrement: () => void }) => {
-  console.log("🔵 Child Rendered");
 
   return (
     <div className="border p-4 rounded mt-4">
@@ -23,7 +22,6 @@ export default function HooksDemo() {
   const [count, setCount] = useState(0);
   const [text, setText] = useState("");
 
-  console.log("🟢 Parent Rendered");
 
   // useCallback Example
   const handleIncrement = useCallback(() => {
@@ -32,7 +30,6 @@ export default function HooksDemo() {
 
   // Expensive Calculation
   const expensiveCalculation = (num: number) => {
-    console.log("🔥 Expensive Calculation Running");
 
     let result = 0;
 

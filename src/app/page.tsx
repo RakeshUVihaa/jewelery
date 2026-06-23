@@ -13,7 +13,7 @@ export default async function DemoPage() {
          "id_head_metal_tone": 1,
          "id_shank_metal_tone": 1,
          "id_band_metal_tone": null,
-         "currency": "INR" }
+         "currency": "USD" }
 
     const response = await fetch(
         `${process.env.BACKEND_URL}/v4/user/api/configurator?company_key=${process.env.COMPANY_KEY}`,
