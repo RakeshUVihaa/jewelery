@@ -10,7 +10,8 @@ interface ProductCardProps {
    
       price: any;
   };
-}export default function ProductCard({ product }: ProductCardProps) {
+}
+export default function ProductCard({ product }: ProductCardProps) {
   const imagePath = product?.product_images?.[0]?.image_path;
   
   return (
